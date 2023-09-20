@@ -1,0 +1,202 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  color: #dadada;
+  font-weight: 700 !important;
+  font-size: 1em;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 4px 5px;
+    width: 50px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+.el-dialog__header {
+  padding: 20px;
+  background: #1f2124;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #dadada !important;
+  /* padding-bottom: 10px; */
+}
+
+.el-pagination__total {
+  font-size: .85em;
+  font-weight: 550;
+  color: #dadada;
+}
+
+
+.el-tabs__nav-scroll {
+  overflow: hidden;
+  background: #1f2124;
+}
+
+.el-tabs--border-card > .el-tabs__header .el-tabs__item.is-active {
+  color: #dadada;
+  background-color: #1f2124;
+  border-right-color: #2c2832;
+  font-weight: 550;
+  font-size: .9em;
+}
+
+.el-tabs--border-card {
+  color: #dadada;
+  background-color: #1f2124;
+  border-color: #2c2832;
+}
+
+.el-dialog__title {
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #dadada !important;
+}
+
+.el-dialog__body {
+  padding: 20px;
+  background: #1f2124;
+  color: #dadada;
+  /* padding-bottom: 10px; */
+}
+
+.el-dialog__footer {
+  padding: 20px;
+  padding-top: 10px;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #1f2124;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  background: #1f2124;
+  color: #dadada;
+  border-color: #2b2f3a;
+}
+
+.el-dropdown-menu__item {
+  list-style: none;
+  line-height: 36px;
+  padding: 0 20px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.75em;
+  color: #dadada;
+  cursor: pointer;
+  outline: none;
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+  display: inline-flex !important;
+  background-color: #303133;
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+.el-menu--collapse
+> div
+> .el-submenu
+> .el-submenu__title
+.el-submenu__icon-arrow {
+  display: none;
+}
+
+//系统提示弹框
+.el-message-box {
+  background: #1f2124;
+  color: #dadada;
+  border: solid 1px #1f2124;
+}
+
+.el-message-box__title {
+  color: #dadada;
+}
+
+.el-message-box__message p {
+  color: #dadada;
+}
+
+.el-message-box__status.el-icon-warning {
+  color: #5e6493;
+}
+
+//提示框
+.el-message--success {
+  background-color: #303133;
+  border-color: #303133;
+}
+
+.el-message--success .el-message__content {
+  color: #dadada;
+}
+
+.el-message--error {
+  background-color: #303133;
+  border-color: #303133;
+}
+
+.el-message--error .el-message__content {
+  color: #dadada;
+}

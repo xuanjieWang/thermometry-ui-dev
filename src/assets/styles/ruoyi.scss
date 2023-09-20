@@ -1,0 +1,557 @@
+/**
+* 通用css样式布局处理
+* Copyright (c) 2019 ruoyi
+*/
+
+/** 基础通用 **/
+.pt5 {
+  padding-top: 5px;
+}
+
+.pr5 {
+  padding-right: 5px;
+}
+
+.pb5 {
+  padding-bottom: 5px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.mb8 {
+  margin-bottom: 5px;
+}
+
+.mb9 {
+  margin-top: 60px;
+  margin-bottom: 5px;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.el-message-box__status + .el-message-box__message {
+  word-break: break-word;
+}
+
+.el-dialog:not(.is-fullscreen) {
+  margin-top: 5vh !important;
+}
+
+.el-dialog__wrapper.scrollbar .el-dialog .el-dialog__body {
+  overflow: auto;
+  overflow-x: hidden;
+  max-height: 70vh;
+  padding: 10px 20px 0;
+}
+
+.el-dialog__headerbtn:focus .el-dialog__close, .el-dialog__headerbtn:hover .el-dialog__close {
+  color: #5e6493;
+}
+
+.el-message-box__headerbtn .el-message-box__close:hover {
+  color: #5e6493;
+}
+
+.el-table {
+  width: 100%;
+  font-weight: 550;
+  font-size: 0.95em;
+  background-color: #303133 !important;
+  border-collapse: separate;
+
+  .el-button + .el-button {
+    margin-left: 1px;
+  }
+
+  .el-loading-mask {
+    background-color: #1f2124;
+  }
+
+  .el-loading-spinner .path {
+    stroke: #5e6493;
+  }
+
+  .el-checkbox__input.is-disabled .el-checkbox__inner {
+    background-color: #303133;
+    border-color: #DCDFE6;
+    cursor: not-allowed;
+    border: 1px solid #dadada;
+  }
+
+  .el-table th.el-table__cell > .cell {
+    margin-left: 10px;
+  }
+
+  .el-checkbox__inner {
+    background-color: #303133;
+    border: 1px solid #dadada;
+  }
+
+  //table表头与表体的间距与样式
+  th.el-table__cell.is-leaf, .el-table td.el-table__cell {
+    border-bottom: 1px solid #1f1c23;
+  }
+
+  .el-table__empty-block {
+    background-color: #303133;
+    color: #dadada;
+  }
+
+  //border-color: #2b2f3a;
+  .el-table__header-wrapper, .el-table__fixed-header-wrapper {
+    th {
+      border-color: #2b2f3a;
+      word-break: break-word;
+      background-color: #303133;
+      color: #dadada;
+      height: 40px;
+      font-weight: 550;
+      font-size: 1em;
+    }
+
+  }
+
+  .el-table__body-wrapper {
+    td {
+      background-color: #303133;
+      border-color: #2b2f3a;
+      word-break: break-word;
+      color: #dadada;
+    }
+
+    .el-button [class*="el-icon-"] + span {
+      margin-left: 1px;
+    }
+
+  }
+
+  .el-table th.el-table__cell.is-leaf, .el-table td.el-table__cell {
+    border-bottom: 1px solid #2b2f3a;
+  }
+}
+
+//日期布局
+.el-date-range-picker__time-header {
+  position: relative;
+  border-bottom: 1px solid black;
+  font-size: 12px;
+  padding: 8px 5px 5px 5px;
+  display: table;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #1f2124;
+}
+
+.el-picker-panel {
+  color: #dadada;
+  border: 1px solid #1f2124;
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  background: #1f2124;
+  border-radius: 4px;
+  line-height: 30px;
+  margin: 5px 0;
+}
+
+
+.el-picker-panel__footer {
+  border-top: 1px solid black;
+  padding: 4px;
+  text-align: right;
+  background-color: #1f2124;
+  position: relative;
+  font-size: 0;
+}
+
+.el-date-table th {
+  padding: 5px;
+  color: #dadada;
+  font-weight: 400;
+  border-bottom: solid 1px black;
+}
+
+.el-date-table td.today span {
+  color: #5e6493;
+  font-weight: bold;
+}
+
+.el-date-table td.start-date div, .el-date-table td.end-date div {
+  color: #5e6493;
+}
+
+.el-date-table td.in-range div {
+  background-color: #303133;
+}
+
+.el-date-table td.start-date span, .el-date-table td.end-date span {
+  background-color: #2c2832;
+}
+
+
+.el-input.is-disabled .el-input__inner {
+  background-color: #303133;
+  border-color: #303133;
+  color: #dadada;
+  cursor: not-allowed;
+}
+
+.el-picker-panel__icon-btn {
+  color: #dadada;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  margin-top: 8px;
+}
+
+//日期  鼠标悬浮
+.el-picker-panel .el-date-table td.available:hover {
+  color: #5e6493;
+}
+
+.el-range-editor.is-active {
+  border-color: #2c2832;
+}
+
+.el-date-table td.next-month, .el-date-table td.prev-month {
+  color: #60656e;
+}
+
+
+.el-time-spinner__wrapper .el-scrollbar__wrap:not(.el-scrollbar__wrap--hidden-default) {
+  overflow: hidden;
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow {
+  top: -6px;
+  left: 50%;
+  margin-right: 3px;
+  border-top-width: 0;
+  border-bottom-color: #1f2124;
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow::after {
+  top: 1px;
+  margin-left: -6px;
+  border-top-width: 0;
+  border-bottom-color: #1f2124;
+}
+
+// 具体时分秒
+.el-time-panel {
+  margin: 5px 0;
+  border: solid 1px #303133;
+  background-color: #303133;
+}
+
+.el-time-spinner__item {
+  height: 32px;
+  line-height: 32px;
+  font-size: 12px;
+  color: #dadada;
+}
+
+.el-time-spinner__item.active:not(.disabled) {
+  color: #5e6493;
+  background: #303133;
+  font-weight: bold;
+}
+
+.el-time-panel__btn.confirm {
+  font-weight: 800;
+  color: #1890ff;
+}
+
+.el-time-panel__footer {
+  border-top: 1px solid #111215;
+  padding: 4px;
+  height: 36px;
+  line-height: 25px;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+.el-time-panel__btn {
+  border: none;
+  line-height: 28px;
+  padding: 0 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  font-weight: 500;
+  font-size: 1em;
+  color: #dadada;
+}
+
+.el-time-panel__btn:focus {
+  background-color: #2c2832 !important;
+  border-color: #2c2832 !important;
+  color: #5e6493 !important;
+}
+
+.el-time-panel__btn.confirm {
+  font-weight: 800;
+  color: #dadada;
+}
+
+.el-date-range-picker__time-header > .el-icon-arrow-right {
+  font-size: 20px;
+  vertical-align: middle;
+  display: table-cell;
+  color: #dadada;
+}
+
+.el-date-range-picker__content.is-left {
+  border-right: 1px solid black;
+}
+
+
+/** 表单布局 **/
+.form-header {
+  font-size: 15px;
+  color: #6379bb;
+  border-bottom: 1px solid #ddd;
+  margin: 8px 10px 25px 10px;
+  padding-bottom: 5px
+}
+
+/** 表格布局 **/
+.pagination-container {
+  position: relative;
+  height: 25px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding: 10px 20px !important;
+}
+
+/* tree border */
+.tree-border {
+  margin-top: 5px;
+  border: 1px solid #e5e6e7;
+  background: #FFFFFF none;
+  border-radius: 4px;
+}
+
+.pagination-container .el-pagination {
+  right: 0;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .pagination-container .el-pagination > .el-pagination__jump {
+    display: none !important;
+  }
+  .pagination-container .el-pagination > .el-pagination__sizes {
+    display: none !important;
+  }
+}
+
+//.el-table .fixed-width .el-button--mini {
+//	padding-left: 0;
+//	padding-right: 0;
+//	width: inherit;
+//}
+
+/** 表格更多操作下拉样式 */
+.el-table .el-dropdown-link, .el-table .el-dropdown-selfdefine {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.el-table .el-dropdown, .el-icon-arrow-down {
+  font-size: 12px;
+}
+
+.el-tree-node__content > .el-checkbox {
+  margin-right: 8px;
+}
+
+.list-group-striped > .list-group-item {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+.list-group {
+  //padding-left: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+.list-group-item {
+  border-bottom: 1px solid #e7eaec;
+  border-top: 1px solid #e7eaec;
+  margin-bottom: -1px;
+  //margin-left: -100px;
+
+  padding: 11px 0px;
+  font-size: 13px;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+
+.el-card {
+  border-radius: 0 !important;
+  color: #dadada !important;
+  font-size: .85em;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid #1f2124;
+  background-color: #1f2124;
+  overflow: hidden;
+  vertical-align: baseline;
+}
+
+
+.el-card__body {
+  padding: 5px 5px 5px 5px;
+}
+
+.card-box {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+/* button color */
+.el-button--cyan.is-active,
+.el-button--cyan:active {
+  background: #20B2AA;
+  border-color: #20B2AA;
+  color: #FFFFFF;
+}
+
+.el-button--cyan:focus,
+.el-button--cyan:hover {
+  background: #48D1CC;
+  border-color: #48D1CC;
+  color: #FFFFFF;
+}
+
+.el-button--cyan {
+  background-color: #20B2AA;
+  border-color: #20B2AA;
+  color: #FFFFFF;
+}
+
+/* text color */
+.text-navy {
+  color: #1ab394;
+}
+
+.text-primary {
+  color: inherit;
+}
+
+.text-success {
+  color: #1c84c6;
+}
+
+.text-info {
+  color: #23c6c8;
+}
+
+.text-warning {
+  color: #f8ac59;
+}
+
+.text-danger {
+  color: #ed5565;
+}
+
+.text-muted {
+  color: #888888;
+}
+
+/* image */
+.img-circle {
+  border-radius: 50%;
+}
+
+.img-lg {
+  width: 120px;
+  height: 120px;
+}
+
+.avatar-upload-preview {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px #ccc;
+  overflow: hidden;
+}
+
+/* 拖拽列样式 */
+.sortable-ghost {
+  opacity: .8;
+  color: #fff !important;
+  background: #42b983 !important;
+}
+
+.top-right-btn {
+  position: relative;
+  float: right;
+}
